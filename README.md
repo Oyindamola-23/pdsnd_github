@@ -25,6 +25,14 @@ The Bikeshare Project involves analyzing bikeshare data from different cities to
 - `data/new_york_city.csv`: Bikeshare data for the city of New York City.
 - `data/washington.csv`: Bikeshare data for the city of Washington.
 
+### Results
+
+## Key Findings
+
+- Analysis of bikeshare data reveals peak usage times.
+- Users predominantly choose specific routes during certain hours.
+- Seasonal variations in bikeshare usage patterns.
+
 ### Installation
 
 1. Clone the repository: `git clone https://github.com/Oyindamola-23/pdsnd_github.git`

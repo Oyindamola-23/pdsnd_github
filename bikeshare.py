@@ -9,8 +9,8 @@ def load_data(city):
     except FileNotFoundError:
       print(f"Data file not found for {city}. Please make sure the file exists.")
       return None
-    
-    
+
+
 def get_user_input():
     city = input("Select a city (chicago, washington, new york city): ").lower()
 
@@ -39,7 +39,7 @@ def filter_data(df, filter_type, time_period):
 def print_statistics(df):
     # Print statistics based on the filtered data
     print("\nStatistics:\n")
-    
+
     print("City Statistics:")
     print(df['Start Time'].count())
 
@@ -80,7 +80,7 @@ def main():
                 time_period = input(f"Enter the {filter_type} (e.g., january, february, march, april, may, june): ").title()
             elif filter_type == 'day':
                 time_period = input(f"Enter the {filter_type} (e.g., monday, tuesday, wednesday, thursday, friday, saturday, sunday): ").title()
-                
+
             df = filter_data(df, filter_type, time_period)
 
         print_statistics(df)
@@ -88,7 +88,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-        
+
 def main():
     city = input("Select a city (chicago, washington, new york city): ").lower()
 
@@ -105,6 +105,7 @@ def main():
     return city, filter_type
 
     def filter_data(df, filter_type, time_period):
+        
         # Filter data based on user input
         if filter_type == 'not at all':
             print("Not applying any filters.")
@@ -117,7 +118,7 @@ def main():
     def print_statistics(df):
         # Print statistics based on the filtered data
         print("\nStatistics:\n")
-    
+
         print("City Statistics:")
         print(df['Start Time'].count())
 
@@ -157,11 +158,11 @@ def run_analysis(city, filter_type, time_period=None):
                 time_period = input(f"Enter the {filter_type} (e.g., january, february, march, april, may, june): ").title()
             elif filter_type == 'day':
                 time_period = input(f"Enter the {filter_type} (e.g., monday, tuesday, wednesday, thursday, friday, saturday, sunday): ").title()
-           
+
         df = filter_data(df, filter_type, time_period)
 
         print_statistics(df)
-        
+
 def main():
     while True:
         city, filter_type = get_user_input()
@@ -173,12 +174,12 @@ def main():
             break
 
 
-            
+
 
 if __name__ == "__main__":
     main()
 
-       
+
 print("Wait! you're about to see something fun")
 
 import pandas as pd

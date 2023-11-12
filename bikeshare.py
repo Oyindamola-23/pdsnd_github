@@ -106,6 +106,7 @@ def main():
     return city, filter_type
 
     def filter_data(df, filter_type, time_period):
+        
         # Filter data based on user input
         if filter_type == 'not at all':
             print("Not applying any filters.")

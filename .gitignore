@@ -1,1 +1,6 @@
+
+#Changes from my local branch
 *.csv
+=======
+#Changes from the remote repository
+.github/**
